@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Ravi Shankar – CSE (AI & ML) Student, Full Stack Developer, AI Engineer. Building scalable AI-powered applications and modern digital experiences." />
+  <meta name="keywords" content="Ravi Shankar, Full Stack Developer, AI Engineer, Machine Learning, FastAPI, React, Python, SRMIST" />
+  <meta name="author" content="Ravi Shankar" />
+  <title>Ravi Shankar · AI Engineer & Full Stack Developer</title>
+  <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg" />
+
+  <!-- Open Graph -->
+  <meta property="og:title"       content="Ravi Shankar · AI Engineer & Full Stack Developer" />
+  <meta property="og:description" content="Building scalable AI-powered applications and modern digital experiences." />
+  <meta property="og:type"        content="website" />
+  <meta property="og:url"         content="https://applivo.in" />
+  <meta property="og:image"       content="assets/images/ravi-profile.jpg" />
+  <meta name="twitter:card"       content="summary_large_image" />
+  <meta name="theme-color"        content="#060b10" />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ─── LOADER ─── -->
+  <div id="loader">
+    <div class="loader-inner">
+      <div class="loader-logo">RS</div>
+      <div class="loader-bar"><div class="loader-fill"></div></div>
+    </div>
+  </div>
+
+  <!-- ─── PARTICLES ─── -->
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- ════════════════════════════════════
+       NAVBAR
+  ════════════════════════════════════ -->
+  <nav id="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-ravi">Ravi</span>
+        <span class="logo-shankar">Shankar</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home"          class="nav-link active">Home</a></li>
+        <li><a href="#about"         class="nav-link">About</a></li>
+        <li><a href="#skills"        class="nav-link">Skills</a></li>
+        <li><a href="#projects"      class="nav-link">Projects</a></li>
+        <li><a href="#experience"    class="nav-link">Experience</a></li>
+        <li><a href="#achievements"  class="nav-link">Achievements</a></li>
+        <li><a href="#education"     class="nav-link">Education</a></li>
+        <li><a href="#certifications" class="nav-link">Certs</a></li>
+        <li><a href="#contact"       class="nav-link">Contact</a></li>
+      </ul>
+
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ════════════════════════════════════
+       HERO
+  ════════════════════════════════════ -->
+  <section id="home" class="hero-section">
+    <div class="hero-bg-glow glow-1"></div>
+    <div class="hero-bg-glow glow-2"></div>
+
+    <div class="hero-content">
+      <div class="hero-text">
+        <h1 class="hero-heading">
+          I design and build digital products
+          <span class="hero-heading-line">that feel modern, fast, and alive.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Pre-final year B.Tech CSE (AI&nbsp;&amp;&nbsp;ML) student at SRMIST with strong experience in
+          Full Stack Development, REST APIs, Machine Learning, and scalable application development.
+          Ranked <strong>Top&nbsp;1%</strong> nationally in the Amazon ML Challenge 2025.
+        </p>
+
+        <div class="hero-actions">
+          <a href="assets/files/Ravi-Shankar-Resume.pdf" download="Ravi-Shankar-Resume.pdf" class="btn btn-primary">
+            <i class="fas fa-download"></i>
+            Download Resume
+          </a>
+          <a href="#projects" class="btn btn-hire">
+            <i class="fas fa-rocket"></i> View Projects
+          </a>
+          <a href="#contact" class="btn btn-hire">
+            <i class="fas fa-briefcase"></i>
+            Hire Me
+          </a>
+        </div>
+
+        <p class="hero-status">
+          Currently open to internships, freelance projects, and product-focused engineering roles.
+        </p>
+
+        <div class="hero-socials">
+          <a href="https://github.com/shanky-ux"     target="_blank" class="social-icon" aria-label="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com"              target="_blank" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="https://www-fallback.instagram.com/ravish4nk/" target="_blank" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+           <a href="https://leetcode.com/u/ravishankar07/" target="_blank" class="social-icon" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+        </div>
+
+        
+      </div>
+
+      <div class="hero-visual">
+        <div class="portrait-stack">
+          <img src="assets/images/me-glow.png" alt="Glow background" class="portrait-glow" />
+          <div class="profile-frame" id="profile-frame">
+            <img
+              src="assets/images/ravi-profile.jpg"
+              alt="Ravi Shankar"
+              class="profile-photo"
+              onerror="this.style.display='none'; document.getElementById('profile-init').style.display='flex';"
+            />
+            <div class="profile-initials" id="profile-init" style="display:none;">RS</div>
+          </div>
+          <div class="hero-intro">
+            <div class="hero-intro-card">
+              Hello! I Am <span>Ravi Shankar</span>
+            </div>
+          </div>
+          <p class="hero-eyebrow">Full Stack Developer · AI Engineer · Creative Builder</p>
+          <div class="portrait-note glass-card">
+            <span class="portrait-note-label">Currently building</span>
+            <strong>AI-powered web apps</strong>
+          </div>
+          <div class="hero-mini-stats">
+            <div class="hero-stat-pill"><strong>5+</strong> Projects</div>
+            <div class="hero-stat-pill"><strong>Top 1%</strong> Amazon ML</div>
+            <div class="hero-stat-pill"><strong>FastAPI</strong> + React</div>
+          </div>
+          <div class="hero-marquee" aria-label="Core technologies">
+            <div class="marquee-track">
+              <span>AI Engineering</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Machine Learning</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>Full Stack</span>
+              <span>AI Engineering</span>
+              <span>FastAPI</span>
+              <span>React</span>
+              <span>TypeScript</span>
+              <span>Machine Learning</span>
+              <span>PostgreSQL</span>
+              <span>Docker</span>
+              <span>Full Stack</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <a href="#about" class="scroll-down" aria-label="Scroll down">
+      <div class="scroll-mouse"><div class="scroll-wheel"></div></div>
+      <span>Scroll Down</span>
+    </a>
+  </section>
+
+  <!-- ════════════════════════════════════
+       ABOUT
+  ════════════════════════════════════ -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who Am I</span>
+        <h2 class="section-title">About <span class="gradient-text">Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="about-callout reveal">
+        <p>I&apos;m currently looking to join a <span>cross-functional team</span></p>
+        <span>that values building thoughtful, accessible digital experiences.</span>
+        <img src="assets/images/illustration.png" alt="Portfolio illustration" class="about-illustration" />
+      </div>
+
+      <div class="about-grid">
+        <div class="about-image-col reveal">
+          <div class="about-img-frame">
+            <img
+              src="assets/images/ravi-profile.jpg"
+              alt="Ravi Shankar"
+              class="about-photo"
+              onerror="this.style.display='none'; document.getElementById('about-init').style.display='flex';"
+            />
+            <div class="about-img-initials" id="about-init" style="display:none;">RS</div>
+            <div class="about-img-border"></div>
+            <div class="about-img-dot dot-tl"></div>
+            <div class="about-img-dot dot-br"></div>
+          </div>
+
+          <div class="about-stats">
+            <div class="stat-card glass-card">
+              <span class="stat-num" data-target="2">0</span>
+              <span class="stat-label">Years Coding</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-num" data-target="5">0</span>
+              <span class="stat-label">Projects Built</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-num" data-target="3">0</span>
+              <span class="stat-label">Hackathon Wins</span>
+            </div>
+            <div class="stat-card glass-card">
+              <span class="stat-num" data-target="6">0</span>
+              <span class="stat-label">Certifications</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-text-col reveal">
+          <p class="about-p">
+            I am a passionate <strong>Full Stack Developer</strong> and <strong>AI/ML enthusiast</strong>
+            currently pursuing B.Tech in Computer Science Engineering with specialization in Artificial
+            Intelligence and Machine Learning at <strong>SRM Institute of Science and Technology</strong>.
+          </p>
+          <p class="about-p">
+            I specialize in building scalable web applications, REST APIs, and AI-powered systems using
+            <strong>Python, FastAPI, Flask, React, TypeScript,</strong> and <strong>PostgreSQL</strong>.
+          </p>
+          <p class="about-p">
+            I enjoy solving real-world problems through technology and have experience developing
+            production-ready applications, machine learning systems, and responsive frontend interfaces —
+            spanning full-stack platforms, fraud detection systems, AI healthcare projects, and NGO
+            management applications.
+          </p>
+          <p class="about-p">
+            Apart from development, I also have creative skills in <strong>Photoshop</strong> and
+            <strong>Premiere Pro</strong> and enjoy content creation through my platform
+            <strong>Dragon Loft</strong>.
+          </p>
+
+          <div class="about-highlights">
+            <div class="highlight-item">
+              <i class="fas fa-map-marker-alt"></i>
+              <span>Chennai, India · Open to Relocation</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-graduation-cap"></i>
+              <span>SRMIST · B.Tech CSE (AI &amp; ML) · CGPA 8.21</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-envelope"></i>
+              <span>ravishankarx2005@gmail.com</span>
+            </div>
+            <div class="highlight-item">
+              <i class="fas fa-globe"></i>
+              <span>applivo.in</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       SKILLS
+  ════════════════════════════════════ -->
+  <section id="skills" class="section skills-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I Know</span>
+        <h2 class="section-title">Technical <span class="gradient-text">Skills</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Languages -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-code"></i></div>
+            <h3>Languages</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="90">Python</span>
+            <span class="skill-tag" data-level="80">TypeScript</span>
+            <span class="skill-tag" data-level="82">JavaScript</span>
+            <span class="skill-tag" data-level="85">SQL</span>
+            <span class="skill-tag" data-level="70">C</span>
+            <span class="skill-tag" data-level="68">C++</span>
+          </div>
+        </div>
+
+        <!-- Frontend -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-layer-group"></i></div>
+            <h3>Frontend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="85">React</span>
+            <span class="skill-tag" data-level="72">Next.js</span>
+            <span class="skill-tag" data-level="90">HTML5</span>
+            <span class="skill-tag" data-level="88">CSS3</span>
+            <span class="skill-tag" data-level="80">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- Backend -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-server"></i></div>
+            <h3>Backend</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="85">Flask</span>
+            <span class="skill-tag" data-level="88">FastAPI</span>
+            <span class="skill-tag" data-level="65">Django</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-database"></i></div>
+            <h3>Database</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="85">PostgreSQL</span>
+            <span class="skill-tag" data-level="80">MySQL</span>
+            <span class="skill-tag" data-level="82">SQLite</span>
+          </div>
+        </div>
+
+        <!-- AI / ML -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-brain"></i></div>
+            <h3>AI / ML</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="80">TensorFlow</span>
+            <span class="skill-tag" data-level="85">Scikit-learn</span>
+            <span class="skill-tag" data-level="90">Pandas</span>
+            <span class="skill-tag" data-level="75">OpenAI APIs</span>
+            <span class="skill-tag" data-level="75">Claude APIs</span>
+          </div>
+        </div>
+
+        <!-- DevOps -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-cogs"></i></div>
+            <h3>Tools &amp; DevOps</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="88">Git</span>
+            <span class="skill-tag" data-level="85">GitHub</span>
+            <span class="skill-tag" data-level="75">Docker</span>
+            <span class="skill-tag" data-level="80">Linux</span>
+            <span class="skill-tag" data-level="88">Jupyter</span>
+          </div>
+        </div>
+
+        <!-- Testing -->
+        <div class="skill-category glass-card reveal">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon"><i class="fas fa-flask"></i></div>
+            <h3>Testing</h3>
+          </div>
+          <div class="skill-tags">
+            <span class="skill-tag" data-level="80">pytest</span>
+            <span class="skill-tag" data-level="85">Postman</span>
+            <span class="skill-tag" data-level="78">API Testing</span>
+            <span class="skill-tag" data-level="82">Debugging</span>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Skill bars removed per request -->
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       PROJECTS
+  ════════════════════════════════════ -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="projects-grid">
+        <article class="project-card glass-card reveal featured">
+          <div class="project-img project-preview-wrap">
+            <img src="assets/images/project-1.png" alt="Applivo preview" class="project-preview" />
+            <div class="project-badge">Live</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Applivo – AI Orchestration Platform</h3>
+            <p class="project-desc">
+              Built a production-ready full-stack AI orchestration platform using FastAPI, Flask,
+              React, TypeScript, PostgreSQL, and Docker. Developed REST APIs with SQLAlchemy ORM,
+              integrated frontend &amp; backend systems, and implemented unit &amp; integration testing
+              using pytest.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>FastAPI</span><span>Flask</span>
+              <span>React</span><span>TypeScript</span><span>PostgreSQL</span><span>Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanky-ux" target="_blank" class="proj-btn proj-btn-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://applivo.in" target="_blank" class="proj-btn proj-btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal featured">
+          <div class="project-img project-preview-wrap">
+            <img src="assets/images/orbitxos-demo.png" alt="OrbitXOS dashboard preview" class="project-preview preview-center" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">OrbitXOS - Dashboard</h3>
+            <p class="project-desc">
+              Responsive business dashboard using React and TypeScript with reusable components
+              and REST API integration. Clean, modern UI with real-time data widgets.
+            </p>
+            <div class="project-tech">
+              <span>React</span><span>TypeScript</span><span>Tailwind CSS</span><span>REST APIs</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanky-ux" target="_blank" class="proj-btn proj-btn-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://orbitxos-5b09.onrender.com/" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal featured showcase-right">
+          <div class="project-img project-preview-wrap">
+            <img src="assets/images/digiverify-demo.png" alt="DigiVerify AI preview" class="project-preview preview-left" />
+            <div class="project-badge badge-win">🏆 1st Place</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">DigiVerify AI – Fraud Detection</h3>
+            <p class="project-desc">
+              AI-powered fraud detection platform with Flask REST APIs, PostgreSQL, React, and
+              TypeScript. Won 1st Place at CARE HACK'26 among 200+ participants.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>React</span>
+              <span>TypeScript</span><span>PostgreSQL</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanky-ux" target="_blank" class="proj-btn proj-btn-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://digiverify-ai-6.onrender.com/" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal featured">
+          <div class="project-img project-preview-wrap">
+            <img src="assets/images/student-performance.png" alt="Student Performance AI preview" class="project-preview preview-center" />
+            <div class="project-badge">ML App</div>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student Performance AI</h3>
+            <p class="project-desc">
+              Machine learning web application that predicts a student&apos;s mathematics score based
+              on demographic and academic inputs. Built with a full end-to-end pipeline covering
+              data ingestion, preprocessing, feature transformation, model training, evaluation,
+              and Flask deployment.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>Scikit-learn</span>
+              <span>Machine Learning</span><span>Data Science</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanky-ux/Predicting-Student-Performance-with-Machine-Learning" target="_blank" class="proj-btn proj-btn-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <a href="https://predicting-student-performance-with.onrender.com" target="_blank" rel="noopener noreferrer" class="proj-btn proj-btn-live">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-img">
+            <img src="assets/projects/skin-scan-dashboard.png" alt="Skin Disease Classifier dashboard preview" class="project-preview" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Skin Disease Classifier</h3>
+            <p class="project-desc">
+              CNN-based skin disease prediction system with ~90% accuracy using TensorFlow and
+              Flask APIs. Implemented prediction logging and API testing using pytest.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>TensorFlow</span><span>Flask</span>
+              <span>PostgreSQL</span><span>Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanky-ux" target="_blank" class="proj-btn proj-btn-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="project-card glass-card reveal">
+          <div class="project-img">
+            <img src="assets/projects/oldage-home-dashboard.jpeg" alt="Old Age Home Management dashboard preview" class="project-preview" />
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Old Age Home Management</h3>
+            <p class="project-desc">
+              Production-ready management system for NGO administration with JWT authentication
+              and CRUD REST APIs. Designed normalized PostgreSQL schemas using SQLAlchemy ORM.
+            </p>
+            <div class="project-tech">
+              <span>Python</span><span>Flask</span><span>PostgreSQL</span><span>JWT Auth</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/shanky-ux" target="_blank" class="proj-btn proj-btn-gh">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       EXPERIENCE
+  ════════════════════════════════════ -->
+  <section id="experience" class="section experience-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Work History</span>
+        <h2 class="section-title">Work <span class="gradient-text">Experience</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="experience-grid">
+        <article class="experience-card glass-card reveal">
+          <div class="experience-art">
+            <img src="assets/images/card-1.png" alt="Linux System Development Intern" />
+          </div>
+          <div class="experience-body">
+            <p class="experience-kicker">Internship</p>
+            <h3 class="experience-title">Linux System Development Intern</h3>
+            <p class="experience-company">C-DAC Chennai · Jan 2026 – Mar 2026</p>
+            <p class="experience-desc">
+              Developed system-level C utilities for embedded Linux environments, wrote technical
+              documentation, and collaborated using Git in a team workflow.
+            </p>
+            <div class="experience-tags">
+              <span>C</span><span>Linux</span><span>Git</span><span>Documentation</span>
+            </div>
+            <div class="experience-links">
+              <a href="assets/certificates/cdac-certificate.pdf" target="_blank" class="exp-btn">
+                <i class="fas fa-certificate"></i>
+                Certificate
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <article class="experience-card glass-card reveal">
+          <div class="experience-art">
+            <img src="assets/images/card-2.png" alt="Machine Learning Intern" />
+          </div>
+          <div class="experience-body">
+            <p class="experience-kicker">Internship</p>
+            <h3 class="experience-title">Machine Learning Intern</h3>
+            <p class="experience-company">Prodigy InfoTech · Dec 2024 – Jan 2025</p>
+            <p class="experience-desc">
+              Built Python ML pipelines processing 10,000+ records, automated preprocessing, and
+              optimized data workflows for faster model iteration.
+            </p>
+            <div class="experience-tags">
+              <span>Python</span><span>Scikit-learn</span><span>Pandas</span><span>ML Pipelines</span>
+            </div>
+            <div class="experience-links">
+              <a href="assets/certificates/ml-certificate.pdf" target="_blank" class="exp-btn">
+                <i class="fas fa-certificate"></i>
+                Certificate
+              </a>
+
+              <a href="assets/certificates/ml-lor.pdf" target="_blank" class="exp-btn">
+                <i class="fas fa-file-alt"></i>
+                LOR
+              </a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       ACHIEVEMENTS
+  ════════════════════════════════════ -->
+  <section id="achievements" class="section achievements-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Recognition</span>
+        <h2 class="section-title">Achievements &amp; <span class="gradient-text">Awards</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="achievements-grid">
+
+        <div class="achieve-card glass-card reveal">
+          <div class="achieve-icon">
+            <i class="fab fa-amazon"></i>
+          </div>
+          <div class="achieve-rank">Rank 62 / 6,223</div>
+          <h3 class="achieve-title">Amazon ML Challenge 2025</h3>
+          <p class="achieve-desc">
+            Secured a national rank of 62 out of 6,223 participants — placing in the
+            <strong>Top 1%</strong> nationally in one of India's most competitive ML challenges.
+          </p>
+          <div class="achieve-tag">Top 1% Nationally</div>
+          <div class="achievement-links">
+            <a href="assets/proofs/amazon-ml-proof.png" target="_blank" class="achievement-btn">
+              <i class="fas fa-image"></i>
+              View Proof
+            </a>
+          </div>
+        </div>
+
+        <div class="achieve-card glass-card reveal">
+          <div class="achieve-icon">
+            <i class="fas fa-trophy"></i>
+          </div>
+          <div class="achieve-rank">1st Place · CARE HACK'26</div>
+          <h3 class="achieve-title">CareHack 2026 Hackathon</h3>
+          <p class="achieve-desc">
+            Won first place among 200+ participants, earning a cash prize of
+            <strong>₹30,000</strong> and a full internship opportunity at <strong>Vdart</strong>.
+          </p>
+          <div class="achieve-tag">₹30,000 Prize + Internship Offer</div>
+          <div class="achievement-links">
+            <a href="assets/proofs/carehack-proof.jpeg" target="_blank" class="achievement-btn">
+              <i class="fas fa-image"></i>
+              View Proof
+            </a>
+          </div>
+        </div>
+
+        <div class="achieve-card glass-card reveal">
+          <div class="achieve-icon">
+            <i class="fas fa-robot"></i>
+          </div>
+          <div class="achieve-rank">1st Place · Algo Vault</div>
+          <h3 class="achieve-title">YUVA National Techfest</h3>
+          <p class="achieve-desc">
+            Won first place at the Algo Vault event at YUVA National Techfest by building an
+            autonomous robot with obstacle avoidance and voice command capabilities.
+          </p>
+          <div class="achieve-tag">Autonomous Robotics</div>
+          <div class="achievement-links">
+            <a href="assets/proofs/algo-vault-proof.jpeg" target="_blank" class="achievement-btn">
+              <i class="fas fa-image"></i>
+              View Proof
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       EDUCATION
+  ════════════════════════════════════ -->
+  <section id="education" class="section education-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Academic Background</span>
+        <h2 class="section-title">My <span class="gradient-text">Education</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="education-grid">
+
+        <div class="edu-card glass-card reveal">
+          <div class="edu-icon"><i class="fas fa-university"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge">Current</span>
+            <h3 class="edu-institution">SRM Institute of Science and Technology</h3>
+            <p class="edu-degree">B.Tech – CSE (Artificial Intelligence &amp; Machine Learning)</p>
+            <div class="edu-meta">
+              <span><i class="fas fa-star"></i> CGPA: 8.21 / 10</span>
+              <span><i class="fas fa-calendar"></i> 2023 – 2027</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="edu-card glass-card reveal">
+          <div class="edu-icon"><i class="fas fa-school"></i></div>
+          <div class="edu-body">
+            <span class="edu-badge edu-badge-done">Completed</span>
+            <h3 class="edu-institution">Amrita Vidyalayam</h3>
+            <p class="edu-degree">Higher Secondary – Mathematics &amp; Computer Science</p>
+            <div class="edu-meta">
+              <span><i class="fas fa-percent"></i> JEE Mains: 95.99 Percentile</span>
+              <span><i class="fas fa-calendar"></i> Graduated 2023</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       CERTIFICATIONS
+  ════════════════════════════════════ -->
+  <section id="certifications" class="section certs-section">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Credentials</span>
+        <h2 class="section-title">My <span class="gradient-text">Certifications</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="certs-grid">
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-python"></i></div>
+          <div class="cert-body">
+            <h4>Python</h4>
+            <p>HackerRank</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/python-basic.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="cert-body">
+            <h4>Intro to Networking</h4>
+            <p>NVIDIA</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/networking.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-brain"></i></div>
+          <div class="cert-body">
+            <h4>ML for All</h4>
+            <p>University of London</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/ml-for-all.jpeg" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-robot"></i></div>
+          <div class="cert-body">
+            <h4>Intro to AI</h4>
+            <p>IBM</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/intro-ai.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-google"></i></div>
+          <div class="cert-body">
+            <h4>Data Fundamentals</h4>
+            <p>Google</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/data-fundamentals.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-laptop-code"></i></div>
+          <div class="cert-body">
+            <h4>Development &amp; Tech Simulation</h4>
+            <p>Accenture · Forage</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/dev-tech-simulation.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fas fa-microchip"></i></div>
+          <div class="cert-body">
+            <h4>CUDA Programming</h4>
+            <p>Packt</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/cuda.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+        <div class="cert-card glass-card reveal">
+          <div class="cert-icon"><i class="fab fa-java"></i></div>
+          <div class="cert-body">
+            <h4>Java Basics</h4>
+            <p>HackerRank</p>
+            <div class="cert-actions">
+              <a href="assets/certificates/java-basics.pdf" target="_blank" rel="noopener" class="exp-btn certificate-btn">
+                <i class="fas fa-certificate"></i>
+                View Certificate
+              </a>
+            </div>
+          </div>
+          <div class="cert-shine"></div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       CONTACT
+  ════════════════════════════════════ -->
+  <section id="contact" class="section contact-section">
+    <div class="hero-bg-glow glow-3"></div>
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Let's Talk</span>
+        <h2 class="section-title">Get In <span class="gradient-text">Touch</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="contact-grid">
+
+        <div class="contact-info reveal">
+          <p class="contact-intro">
+            I'm currently open to internships, freelance projects, and full-time opportunities
+            after graduation. Feel free to reach out — I'd love to connect!
+          </p>
+
+          <div class="contact-cards">
+            <a href="mailto:ravishankarx2005@gmail.com" class="contact-card glass-card">
+              <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+              <div>
+                <p class="contact-card-label">Email</p>
+                <p class="contact-card-val">ravishankarx2005@gmail.com</p>
+              </div>
+            </a>
+
+            <a href="tel:+919150055448" class="contact-card glass-card">
+              <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+              <div>
+                <p class="contact-card-label">Phone</p>
+                <p class="contact-card-val">+91 91500 55448</p>
+              </div>
+            </a>
+
+            <div class="contact-card glass-card">
+              <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+              <div>
+                <p class="contact-card-label">Location</p>
+                <p class="contact-card-val">Chennai, India</p>
+              </div>
+            </div>
+
+            <a href="https://applivo.in" target="_blank" class="contact-card glass-card">
+              <div class="contact-card-icon"><i class="fas fa-globe"></i></div>
+              <div>
+                <p class="contact-card-label">Portfolio</p>
+                <p class="contact-card-val">applivo.in</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="contact-socials">
+            <a href="https://github.com/shanky-ux" target="_blank" class="social-icon"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com"           target="_blank" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www-fallback.instagram.com/ravish4nk/" target="_blank" class="social-icon"><i class="fab fa-instagram"></i></a>
+            <a href="https://leetcode.com/u/ravishankar07/" target="_blank" class="social-icon" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+
+        <form class="contact-form glass-card reveal" id="contact-form" novalidate>
+          <div class="form-group">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Your name" required />
+            <span class="form-error" id="err-name"></span>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required />
+            <span class="form-error" id="err-email"></span>
+          </div>
+          <div class="form-group">
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" name="subject" placeholder="What's this about?" required />
+            <span class="form-error" id="err-subject"></span>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="Tell me about your project or opportunity..." required></textarea>
+            <span class="form-error" id="err-message"></span>
+          </div>
+          <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent successfully! I'll get back to you soon.
+          </div>
+        </form>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ════════════════════════════════════
+       FOOTER
+  ════════════════════════════════════ -->
+  <footer id="footer">
+    <div class="footer-container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">
+            <span class="footer-ravi">Ravi</span>
+            <span class="footer-shankar">Shankar</span>
+          </a>
+          <p>Building scalable AI-powered applications and modern digital experiences.</p>
+          <div class="footer-socials">
+            <a href="https://github.com/shanky-ux" target="_blank" class="social-icon sm"><i class="fab fa-github"></i></a>
+            <a href="https://linkedin.com"           target="_blank" class="social-icon sm"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www-fallback.instagram.com/ravish4nk/" target="_blank" class="social-icon sm"><i class="fab fa-instagram"></i></a>
+            <a href="https://leetcode.com/u/ravishankar07/" target="_blank" class="social-icon sm" aria-label="LeetCode"><i class="fas fa-code"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-nav">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-nav">
+          <h4>More</h4>
+          <ul>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#certifications">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© 2025 Ravi Shankar. All rights reserved.</p>
+        <p>Designed &amp; Built by <span class="gradient-text">Ravi Shankar</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll to top -->
+  <button id="scroll-top" aria-label="Scroll to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <div class="cert-modal" id="cert-modal" aria-hidden="true">
+    <div class="cert-modal-backdrop" data-cert-close></div>
+    <div class="cert-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cert-modal-title">
+      <button type="button" class="cert-modal-close" id="cert-modal-close" aria-label="Close certificate preview">&times;</button>
+      <h3 class="cert-modal-title" id="cert-modal-title">Certificate Preview</h3>
+      <img id="cert-modal-image" class="cert-modal-image" alt="Certificate preview" />
+      <iframe id="cert-modal-frame" class="cert-modal-frame" title="Certificate preview" hidden></iframe>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <linearGradient id="g1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4ff"/>
+      <stop offset="100%" style="stop-color:#7c3aed"/>
+    </linearGradient>
+    <clipPath id="circle"><circle cx="200" cy="200" r="200"/></clipPath>
+  </defs>
+  <rect width="400" height="400" fill="url(#g1)" clip-path="url(#circle)"/>
+  <text x="200" y="230" text-anchor="middle" font-family="'Syne',sans-serif"
+        font-size="120" font-weight="800" fill="white" opacity="0.95">RS</text>
+</svg>
