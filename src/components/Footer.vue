@@ -1,7 +1,5 @@
 <script setup lang="ts">
 import Social from "./Social.vue";
-import Link from "./Link.vue";
-import Clickable from "./Clickable.vue";
 import NotchSection from "./NotchSection.vue";
 import ButtonRound from "./ButtonRound.vue";
 import { lenis } from "../composables/useScroll";
@@ -39,36 +37,6 @@ const { withSocial = true } = defineProps<Props>();
         <Social v-if="withSocial" />
       </div>
       <div class="footer-credits">
-        <div class="footer-credits-built">
-          <p>
-            Originally created by
-          </p>
-          <Clickable renderAs="div">
-            <Link
-              href="https://david-hckh.com"
-              class="footer-link children-unclickable"
-              external
-              data-cursor="circle-white"
-              data-hoversound="hover"
-              >David Heckhoff</Link
-            >
-          </Clickable>
-        </div>
-        <div class="footer-credits-music">
-          <p>
-            Music produced by
-          </p>
-          <Clickable renderAs="div">
-            <Link
-              href="https://soundcloud.com/hmsurf"
-              class="footer-link children-unclickable"
-              external
-              data-cursor="circle-white"
-              data-hoversound="hover"
-              >HM Surf</Link
-            >
-          </Clickable>
-        </div>
         <p>© {{ new Date().getFullYear() }} Ravi Shankar</p>
       </div>
     </div>
