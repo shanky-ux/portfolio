@@ -1,3 +1,12 @@
+# Ravi Shankar - Portfolio
+
+Ravi Shankar's personal portfolio website showcasing Agentic AI engineering projects, full-stack development, and professional experience.
+Live URL: https://ravish4nkar.vercel.app
+
+**Stack**: Vue 3, TypeScript, Vite, three.js, GSAP, Lenis, Howler.
+
+Note: This site is based on David Heckhoff's portfolio-2025; his permission terms and attribution requirements are respected.
+
 # Portfolio (2025)
 
 Personal portfolio site: project case studies, lightweight 3D and shader demos, bilingual copy (English and German).

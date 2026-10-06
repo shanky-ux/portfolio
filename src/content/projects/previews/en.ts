@@ -1,40 +1,47 @@
-import thumbnailCubeWar from "../../../assets/thumbnails/cubewar.webp";
-import thumbnailQuibbo from "../../../assets/thumbnails/quibbo.webp";
-import thumbnailParticles from "../../../assets/thumbnails/particles.webp";
-import thumbnailPokedex from "../../../assets/thumbnails/pokedex.webp";
-import thumbnailSharkie from "../../../assets/thumbnails/sharkie.webp";
+import thumbnailApplivo from "../../../assets/thumbnails/applivo.webp";
+import thumbnailVeloura from "../../../assets/thumbnails/veloura.webp";
+import thumbnailOrbitxos from "../../../assets/thumbnails/orbitxos.webp";
+import thumbnailDigiverify from "../../../assets/thumbnails/digiverify.webp";
+import thumbnailStudentPerformance from "../../../assets/thumbnails/student-performance.webp";
+import thumbnailSkinScan from "../../../assets/images/projects/skin-scan/skin-scan-0.webp";
 
 import type { ProjectPreview } from "../../types";
 
 export default [
   {
-    title: "CubeWar",
-    slug: "cubewar",
-    thumbnail: thumbnailCubeWar,
-    description: "Multiplayer strategy game",
+    title: "Applivo",
+    slug: "applivo",
+    thumbnail: thumbnailApplivo,
+    description: "AI Orchestration Platform",
   },
   {
-    title: "Quibbo",
-    slug: "quibbo",
-    thumbnail: thumbnailQuibbo,
-    description: "Multiplayer gaming platform",
+    title: "Veloura",
+    slug: "veloura",
+    thumbnail: thumbnailVeloura,
+    description: "E-commerce storefront",
   },
   {
-    title: "Sharkie",
-    slug: "sharkie",
-    thumbnail: thumbnailSharkie,
-    description: "2D adventure game",
+    title: "OrbitXOS Dashboard",
+    slug: "orbitxos",
+    thumbnail: thumbnailOrbitxos,
+    description: "Responsive Business Dashboard",
   },
   {
-    title: "WebGL Particles",
-    slug: "particles",
-    thumbnail: thumbnailParticles,
-    description: "Dynamic 3D particles",
+    title: "DigiVerify AI",
+    slug: "digiverify",
+    thumbnail: thumbnailDigiverify,
+    description: "AI Fraud Detection",
   },
   {
-    title: "Pokédex",
-    slug: "pokedex",
-    thumbnail: thumbnailPokedex,
-    description: "Open-source learning project",
+    title: "Student Performance AI",
+    slug: "student-performance",
+    thumbnail: thumbnailStudentPerformance,
+    description: "ML Prediction App",
+  },
+  {
+    title: "Skin Disease Classifier",
+    slug: "skin-scan",
+    thumbnail: thumbnailSkinScan,
+    description: "Disease Classification System",
   },
 ] as const satisfies ProjectPreview[];

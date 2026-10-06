@@ -3,6 +3,7 @@ import Header from "./components/Header.vue";
 import { useTranslations } from "./i18n/composables/useTranslations";
 import { usePreloader } from "./composables/usePreloader";
 import Cursor from "./components/Cursor.vue";
+import ContactForm from "./components/ContactForm.vue";
 import { useAgent } from "./composables/useAgent";
 import { useMusic } from "./features/sounds/composables/useMusic";
 import { useHowler } from "./features/sounds/composables/useHowler";
@@ -15,6 +16,7 @@ import { projectVisible } from "./composables/useRouteObserver";
 import ProjectBackground from "./features/projects/components/ProjectBackground.vue";
 import { useClickSound } from "./features/sounds/composables/useClickSounds";
 //import { useHoverSound } from "./features/sounds/composables/useHoverSounds";
+import { provide, ref } from 'vue';
 
 const { isTransitioning } = useProjectTransition();
 
@@ -27,6 +29,9 @@ useRouteObserver();
 useClickSound();
 //useHoverSound();
 const { isTouch } = useAgent();
+
+const contactFormRef = ref();
+provide('openContactForm', () => contactFormRef.value?.open());
 </script>
 
 <template>
@@ -52,6 +57,7 @@ const { isTouch } = useAgent();
   </div>
 
   <Cursor v-if="!isTouch" />
+  <ContactForm ref="contactFormRef" />
 </template>
 
 <style lang="scss">

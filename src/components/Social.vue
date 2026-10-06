@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { inject } from "vue";
 import Github from "./icons/Github.vue";
 import Linkedin from "./icons/Linkedin.vue";
 import Instagram from "./icons/Instagram.vue";
@@ -9,6 +10,8 @@ import { t } from "../i18n/utils/translate";
 import ButtonRound from "./ButtonRound.vue";
 
 import { social } from "../content/social";
+
+const openContactForm = inject('openContactForm') as () => void;
 
 const props = defineProps<{
   variant?: "theme" | "background";
@@ -24,6 +27,11 @@ const icons = {
 } as const;
 
 const getAriaLabel = (name: string) => `${t("go-to")} ${name.charAt(0).toUpperCase() + name.slice(1)}`;
+
+const handleMailClick = (event: MouseEvent) => {
+  event.preventDefault();
+  openContactForm();
+};
 </script>
 
 <template>
@@ -36,6 +44,7 @@ const getAriaLabel = (name: string) => `${t("go-to")} ${name.charAt(0).toUpperCa
       :aria-label="getAriaLabel(item.name)"
       class="social-link"
       data-cursor="circle-white"
+      @click="item.name === 'mail' ? handleMailClick($event) : undefined"
     >
       <ButtonRound
         renderAs="div"

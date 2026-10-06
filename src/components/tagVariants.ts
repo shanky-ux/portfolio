@@ -12,7 +12,15 @@ export type TagVariant =
   | "kubernetes"
   | "postgresql"
   | "ogl"
-  | "glsl";
+  | "glsl"
+  | "python"
+  | "fastapi"
+  | "flask"
+  | "typescript"
+  | "docker"
+  | "tailwind"
+  | "scikit-learn"
+  | "tensorflow";
 
 export const tagLabels = {
   three: "Three.js",
@@ -29,4 +37,12 @@ export const tagLabels = {
   postgresql: "PostgreSQL",
   ogl: "OGL.js",
   glsl: "GLSL",
+  python: "Python",
+  fastapi: "FastAPI",
+  flask: "Flask",
+  typescript: "TypeScript",
+  docker: "Docker",
+  tailwind: "Tailwind CSS",
+  "scikit-learn": "Scikit-learn",
+  tensorflow: "TensorFlow",
 } as const satisfies Record<TagVariant, string>;

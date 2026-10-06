@@ -1,18 +1,19 @@
 <script setup lang="ts">
-import Button from "./Button.vue";
-import Logo from "./Logo.vue";
-import { computed, ref } from "vue";
+import { computed, ref, inject } from "vue";
 import { t } from "../i18n/utils/translate";
 import { useHeaderTheme } from "../composables/useHeaderTheme";
 import { lenis } from "../composables/useScroll";
 import { projectId } from "../composables/useRouteObserver";
-import { social } from "../content/social";
+import Button from "./Button.vue";
 import ButtonRound from "./ButtonRound.vue";
+import Logo from "./Logo.vue";
 import ArrowRight from "./icons/ArrowRight.vue";
 import SoundsToggle from "./SoundsToggle.vue";
 import { isFeatureEnabled } from "../utils/features";
 import { useRouter } from "../composables/useRouter";
 import { useFirstRoute } from "../composables/useFirstRoute";
+
+const openContactForm = inject('openContactForm') as () => void;
 
 const router = useRouter();
 const { isFirstRoute } = useFirstRoute();
@@ -97,14 +98,13 @@ const getInTouchClassNames = computed(() => {
     </div>
     <div class="header-right">
       <Button
-        renderAs="a"
         variant="accent"
         :aria-label="t('get-in-touch')"
-        :href="social.find((item) => item.name === 'mail')?.url ?? ''"
-        external
+        @click="openContactForm"
         :class="getInTouchClassNames"
         data-cursor="circle-white"
         data-hoversound="hover"
+        data-sound="click"
         >{{ t("get-in-touch") }}</Button
       >
       <SoundsToggle class="header-sounds-toggle" :isDarkTheme="isDarkTheme" v-if="isFeatureEnabled('sounds')" />
